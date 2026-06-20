@@ -39,13 +39,13 @@ public class Main {
      }
 System.out.println("=== TESTE DE IGUALDADE (equals) ===");
         
-        // Primeira comparação (Índice 0 vs Índice 1)
-        boolean saoIguais = herois.get(0).equals(herois.get(1));
-        System.out.println("O primeiro herói é igual ao segundo? " + saoIguais);
-        
-        // Correção: Reatribuição da variável existente (sem o 'boolean') e ajuste no texto
-        saoIguais = herois.get(2).equals(herois.get(3));
-        System.out.println("O terceiro herói é igual ao quarto? " + saoIguais);
+// Primeira comparação (Índice 0 vs Índice 1) utilizando get(index).getNome()
+boolean saoIguais = herois.get(0).equals(herois.get(1));
+System.out.println("O " + herois.get(0).getNome() + " é igual ao " + herois.get(1).getNome() + "? " + saoIguais);
+
+// Segunda comparação (Índice 2 vs Índice 3)
+saoIguais = herois.get(2).equals(herois.get(3));
+System.out.println("O " + herois.get(2).getNome() + " é igual ao " + herois.get(3).getNome() + "? " + saoIguais);
 	}
 	
 	
